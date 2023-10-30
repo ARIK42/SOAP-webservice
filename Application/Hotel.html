@@ -1,0 +1,74 @@
+<!doctype html>
+<title>Insert data</title>
+<html>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	
+<style type="text/css">
+#form1 table tr td {
+    font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+#form1 table tr td #Add {
+    font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+</style>
+<body>
+
+<img src="image/logo.png" width="49%" height="147" alt="logo" class="center">
+
+<form id="form1" name="form1" method="post" action="post">
+  <table width="500" border="5">
+      <tr>
+        <td width="300">UNIT ID</td>
+        <td width="180">
+          <label for="UnitID"></label>
+          <input type="text" name="UnitID" id="UnitID" />
+        </td>
+      </tr>
+      <tr>
+        <td>HOTEL</td>
+        <td>
+          <label for="Hotel"></label>
+          <input type="text" name="Hotel" id="Hotel" />
+        </td>
+      </tr>
+      <tr>
+        <td>LOCATION</td>
+        <td>
+          <label for="Location"></label>
+          <input type="text" name="Location" id="Location" />
+        </td>
+      </tr>
+      <tr>
+        <td>RATE (RM)</td>
+        <td>
+          <label for="Rate"></label>
+          <input type="int" name="Rate" id="Rate" />
+        </td>
+      </tr>
+	  <tr>
+        <td>AVAILABLE (Y/N)</td>
+        <td>
+          <label for="Available"></label>
+          <input type="text" name="Available" id="Available" />
+        </td>
+      </tr>
+	  <tr>
+        <td>CAPACITY</td>
+        <td>
+          <label for="Capacity"></label>
+          <input type="text" name="Capacity" id="Capacity" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <strong>
+          <input type="submit" name="Add" id="Add" value="ADD" formaction="add_data.php" />
+          <input type="submit" name="Update" id="Update" value="UPDATE" formaction="update_data.php" />
+          <input type="submit" name="Delete" id="Delete" value="DELETE" formaction="delete_data.php" />
+          <input type="submit" name="View" id="View" value="VIEW" formaction="view_data.php" />
+        </strong>        </td>
+      </tr>
+    </table>
+</form>
+</body>
+</html>
